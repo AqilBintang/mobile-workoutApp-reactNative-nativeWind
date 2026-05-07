@@ -36,18 +36,18 @@ Format: `<type>(<scope>): <subject>`
 
 ### Types
 
-| Type       | Kapan dipakai                          |
-|------------|----------------------------------------|
-| `feat`     | Fitur baru                             |
-| `fix`      | Bug fix                                |
-| `docs`     | Perubahan dokumentasi                  |
-| `style`    | Formatting, tidak ada perubahan logic  |
-| `refactor` | Refactor kode                          |
-| `perf`     | Peningkatan performa                   |
-| `test`     | Menambah atau update test              |
-| `chore`    | Update build, config, dependencies     |
-| `ci`       | Perubahan CI/CD                        |
-| `revert`   | Revert commit sebelumnya               |
+| Type       | Kapan dipakai                         |
+| ---------- | ------------------------------------- |
+| `feat`     | Fitur baru                            |
+| `fix`      | Bug fix                               |
+| `docs`     | Perubahan dokumentasi                 |
+| `style`    | Formatting, tidak ada perubahan logic |
+| `refactor` | Refactor kode                         |
+| `perf`     | Peningkatan performa                  |
+| `test`     | Menambah atau update test             |
+| `chore`    | Update build, config, dependencies    |
+| `ci`       | Perubahan CI/CD                       |
+| `revert`   | Revert commit sebelumnya              |
 
 ### Contoh
 
@@ -60,6 +60,7 @@ git commit -m "chore(deps): update nativewind to v4.2"
 ## Development Workflow
 
 1. Install semua dependencies
+
    ```bash
    # Root (devops tools)
    npm install
@@ -69,6 +70,7 @@ git commit -m "chore(deps): update nativewind to v4.2"
    ```
 
 2. Jalankan app dari root
+
    ```bash
    npm run frontend          # expo start
    npm run frontend:android  # android
@@ -76,6 +78,7 @@ git commit -m "chore(deps): update nativewind to v4.2"
    ```
 
 3. Buat branch dari `develop`
+
    ```bash
    git checkout -b feature/nama-fitur develop
    ```
